@@ -22,6 +22,7 @@ struct etna_gpu *find_suitable_gpu(struct etna_device *dev)
             return gpu;
         }
         etna_gpu_del(gpu);
+        ++core_id;
     }
 }
 
